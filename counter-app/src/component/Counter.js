@@ -33,7 +33,8 @@ function Counter() {
     }
 
     const styleStep =  {
-        paddingLeft: '2.5rem',
+        width: '6rem',
+        paddingLeft: '3rem',
         marginBottom: 30
 
     }
@@ -49,7 +50,7 @@ function Counter() {
             <span>
                 <label style={{float: "left"}}>Steps</label>
                 <br />
-                <InputNumber className="TextRight" style={styleStep} 
+                <InputNumber style={styleStep} 
                 value={steps} onChange={onChange} />
                 <br />
             </span>

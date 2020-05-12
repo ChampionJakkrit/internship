@@ -36,34 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-span {
-  display: inline-block;
-}
-
-.TextRight {
-  text-align: right;
-  padding-right: 10rem;
-}
-
-nav {
-  display: flex;
-  float: right;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-}
-
-.nav-link {
-  width: 25%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-
-li {
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-  font-size: large;
-}

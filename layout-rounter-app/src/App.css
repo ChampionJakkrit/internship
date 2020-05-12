@@ -1,5 +1,7 @@
+@import '~antd/dist/antd.css';
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -37,33 +39,7 @@
   }
 }
 
-span {
-  display: inline-block;
+.ant-avatar .ant-avatar-circle .ant-avatar-image {
+  margin: 2rem;
 }
 
-.TextRight {
-  text-align: right;
-  padding-right: 10rem;
-}
-
-nav {
-  display: flex;
-  float: right;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-}
-
-.nav-link {
-  width: 25%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-
-li {
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-  font-size: large;
-}
