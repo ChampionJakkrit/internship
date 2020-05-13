@@ -67,3 +67,16 @@ li {
   margin-top: 0.5rem;
   font-size: large;
 }
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 350px;
+  width: 800px;
+  line-height: 160px;
+  background: #55acee;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
