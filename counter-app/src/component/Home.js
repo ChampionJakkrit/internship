@@ -7,7 +7,7 @@ function Home() {
     return (
         <div>
             <Col span={24} style={{marginTop: -100}}>
-                <Carousel style={{width: 800, height: 350, marginLeft: 430}} autoplay>
+                <Carousel style={{width: 800, height: 350, marginLeft: 330}} autoplay>
                     <div>
                         <img style={{height: 350, width: 800}} src="../trad.jpg" alt="trad"></img>
                     </div>

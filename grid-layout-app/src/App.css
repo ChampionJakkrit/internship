@@ -1,0 +1,64 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+.content {
+  height: 100%;
+  background-color: black;
+}
+
+.msg-content {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 10% 0 0.8rem 5%;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-content {
+  color: black;
+  text-align: left;
+  padding: 0.2rem 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer {
+  background-color: #353838;
+  padding: 0.6rem;
+  color: #939999;
+}
+
+.ft-left {
+  text-align: left;
+  display: inline;
+  padding-right: 70%;
+}
+
+.ft-right {
+  text-align: right;
+  display: inline;
+}
+
+.bt-login {
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.input {
+  border-radius: 0.4rem;
+  margin-top: 0.6rem;
+  width: 12rem;
+  padding: 0 1rem;
+}
+
+/* .sider {
+  min-height: 680px;
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/img-in-th/53fe95d2e4b4570f31e529afd85a858e.jpg');
+  background-repeat: no-repeat;
+} */
+
+/* position: fixed; */
+  /* height: 100%; */

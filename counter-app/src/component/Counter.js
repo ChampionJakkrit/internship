@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../App.css';
-import { Button, InputNumber, Input, Table, Tag, Space  } from 'antd';
+import { Button, InputNumber, Input, Table, Tag, Space, PageHeader } from 'antd';
 import { PlusCircleOutlined, MinusCircleOutlined, CloseCircleOutlined, UndoOutlined, DollarOutlined } from '@ant-design/icons';
 
 function Counter() {
@@ -112,8 +112,12 @@ function Counter() {
 
     return (
         <div>  
-            <div style={{marginTop: -100, marginBottom: 50}}>
-            <h1 style={{float: "left", marginLeft: 120}}>Counter</h1>
+            <div style={{marginTop: -115, marginBottom: 50}}>
+              <PageHeader style={{float: "left", marginLeft: 120}}
+                    className="site-page-header"
+                    onBack={() => window.history.back()}
+                    title="Counter"
+                />
                 <img src="../blue_line.png" alt="line" width="100%" height="8" />
             </div>
 
@@ -140,7 +144,7 @@ function Counter() {
             </Space>
             </div>
 
-            <div className="table" style={{marginTop: 50, marginLeft: 440, width: 800}}>
+            <div className="table" style={{marginTop: 30, marginLeft: 330, width: 800}}>
                 <Table columns={columns} dataSource={data} />
             </div>
         </div>

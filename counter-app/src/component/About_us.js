@@ -1,7 +1,8 @@
 import React from 'react'
-import { Row, Col } from 'antd';
+import { Row, Col, PageHeader } from 'antd';
 import { Tree } from 'antd';
 import { DownOutlined, UserOutlined, UsergroupAddOutlined } from '@ant-design/icons';
+
 
 function About_us() {
    
@@ -59,12 +60,16 @@ function About_us() {
 
     return (
         <div>
-            <div style={{marginTop: -100, marginBottom: 50}}>
-                    <h1 style={{float: "left", marginLeft: 120}}>About us</h1>
-                    <img src="../blue_line.png" alt="line" width="100%" height="8" />
+            <div style={{marginTop: -115, marginBottom: 50}}>
+                <PageHeader style={{float: "left", marginLeft: 120}}
+                    className="site-page-header"
+                    onBack={() => window.history.back()}
+                    title="About us"
+                />
+                <img src="../blue_line.png" alt="line" width="100%" height="8" />
             </div>
             <div>
-                <Row style={{margin: 40, marginBottom: 0, marginTop: -10}}>
+                <Row style={{margin: 10, marginBottom: 0, marginTop: -10}}>
                     <Col span={8}>
                     <div style={{marginLeft: 100}}>
                         <Tree

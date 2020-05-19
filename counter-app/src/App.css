@@ -80,3 +80,21 @@ li {
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
+
+.active {
+  color: #aad3f0;
+}
+
+.chart {
+  width: 800px;
+  margin-left: 350px;
+}
+
+.header {
+  color: rgb(135, 135, 243);
+}
+
+.line-chart {
+  width: 800px;
+
+}
