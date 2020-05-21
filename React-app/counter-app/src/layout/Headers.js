@@ -59,6 +59,11 @@ function Headers() {
                         Contact
                         </li>
                     </NavLink>
+                    <NavLink to='/login' activeClassName="active">
+                        <li>
+                        Login
+                        </li>
+                    </NavLink>
                     </ul>    
                 </nav> 
                 </div>

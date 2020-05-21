@@ -1,4 +1,7 @@
 import React from 'react'
+import { Card, Layout } from 'antd';
+import { Route } from 'react-router-dom';
+
 import Home from '../component/Home';
 import Counter from '../component/Counter';
 import Basic_charts from '../plotly/Basic_charts';
@@ -8,10 +11,20 @@ import Line_chart from '../plotly/Line_chart';
 import Scatter_plot from '../plotly/Scatter_plot';
 import About_us from '../component/About_us';
 import Contact from '../component/Contact';
-import { Card, Layout } from 'antd';
-import { Route } from 'react-router-dom';
+import Login from '../component/Login';
+
+import GridLogin from '../layout/gridLogin'
 
 const { Content } = Layout;
+
+const LoginLayout = ({component: Component, layout: Layout, ...rest}) => (
+    <Route {...rest} render= {props => (
+      <GridLogin>
+        <Component {...rest}></Component>
+      </GridLogin>
+    )}>
+    </Route>
+  )
 
 function Contents() {
     return (
@@ -27,7 +40,9 @@ function Contents() {
                     <Route path="/scatter_plot" component={Scatter_plot} />
                     <Route path="/about_us" component={About_us} />
                     <Route path="/contact" component={Contact} />
-                </Card>
+                    <LoginLayout path="/login" component={Login} />   
+                </Card>     
+                
             </Content>
         </div>
     )

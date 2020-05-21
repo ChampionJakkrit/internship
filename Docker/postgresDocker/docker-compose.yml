@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+    postgres:
+        image: postgres-docker
+        ports: 
+            - 4444:5432
+        volumes: 
+            - postgresDocker.sql
+        environment: 
+            - POSTGRES_POSSWORD=root123456
