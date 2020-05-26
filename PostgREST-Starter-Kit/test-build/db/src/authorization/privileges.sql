@@ -39,6 +39,10 @@ with check (
 grant select, insert, update, delete on data.todo to api;
 grant usage on data.todo_id_seq to webuser;
 
+-- give access to the view owner to this table
+grant select on data.user to api;
+grant usage on data.user_id_seq to anonymous;
+
 
 -- While grants to the view owner and the RLS policy on the underlying table 
 -- takes care of what rows the view can see, we still need to define what 
@@ -49,4 +53,8 @@ grant select, insert, update, delete on api.todos to webuser;
 
 -- anonymous users can only request specific columns from this view
 grant select (id, todo) on api.todos to anonymous;
+-------------------------------------------------------------------------------
+
+-- anonymous users can only request specific columns from this view
+grant select (id, name, email, role) on api.users to anonymous;
 -------------------------------------------------------------------------------
